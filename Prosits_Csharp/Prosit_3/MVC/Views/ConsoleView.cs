@@ -5,7 +5,15 @@ namespace PizzeriaMVC.Views
 {
     public class ConsoleView
     {
-        public void ShowHeader() => Console.WriteLine("=== Pizzeria MVC - Exemple d'architecture ===\n");
+        public void Clear() => Console.Clear();
+
+        public void ShowHeader()
+        {
+            Console.WriteLine("=========================================");
+            Console.WriteLine("  Pizzeria MVC — Exemple d'architecture");
+            Console.WriteLine("=========================================");
+            Console.WriteLine();
+        }
 
         public void ShowMenu(Menu menu)
         {
@@ -17,10 +25,23 @@ namespace PizzeriaMVC.Views
             Console.WriteLine();
         }
 
+        public void ShowCommands()
+        {
+            Console.WriteLine("Commandes :");
+            Console.WriteLine(" [id]   - Ajouter la pizza par son ID (ex: 1)");
+            Console.WriteLine(" v      - Voir la commande actuelle");
+            Console.WriteLine(" r      - Retirer une pizza par ID de la commande");
+            Console.WriteLine(" c      - Valider (payer) la commande");
+            Console.WriteLine(" h      - Afficher l'aide (cette liste)");
+            Console.WriteLine(" q      - Quitter");
+            Console.WriteLine();
+        }
+
         public void ShowOrder(Order order)
         {
-            Console.WriteLine("Commande actuelle :");
+            Console.WriteLine("--- Commande actuelle ---");
             Console.WriteLine(order.ToString());
+            Console.WriteLine("-------------------------");
             Console.WriteLine();
         }
 

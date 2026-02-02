@@ -37,5 +37,15 @@ namespace PizzeriaMVC.Controllers
             _view.ShowMessage("Validation de la commande :\n" + _order.ToString());
             _order.Clear();
         }
+
+        public void RemovePizzaById(int id)
+        {
+            if (_order.RemoveById(id))
+            {
+                _view.ShowMessage($"Pizza avec l'ID {id} retirée de la commande.");
+                return;
+            }
+            _view.ShowMessage($"Aucune pizza avec l'ID {id} dans la commande.");
+        }
     }
 }

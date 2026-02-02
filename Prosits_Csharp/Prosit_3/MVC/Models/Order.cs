@@ -18,6 +18,14 @@ namespace PizzeriaMVC.Models
 
         public void Clear() => _items.Clear();
 
+        public bool RemoveById(int id)
+        {
+            var pizza = _items.FirstOrDefault(p => p.Id == id);
+            if (pizza == null) return false;
+            _items.Remove(pizza);
+            return true;
+        }
+
         public override string ToString()
         {
             if (!_items.Any()) return "Commande vide.";
