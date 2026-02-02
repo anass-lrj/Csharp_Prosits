@@ -2,8 +2,7 @@ using System;
 
 namespace DP.Examples.Bridge
 {
-    public static class BridgeDemo
-    {
+    public static class BridgeDemo    {
         public static void Run()
         {
             // Short demonstration that shows how the Abstraction (Shape)
