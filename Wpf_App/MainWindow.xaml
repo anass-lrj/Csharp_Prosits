@@ -1,0 +1,23 @@
+﻿<Window x:Class="Wpf_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_App"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="MonTexte" 
+                       Text="En attente..." 
+                       FontSize="30" 
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20"/>
+
+            <Button Content="Clique ici Paul !" 
+                    Padding="10,5" 
+                    Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
