@@ -9,6 +9,9 @@
 
   <ItemGroup>
     <Folder Include="Prosit_1\" />
+    <Folder Include="Prosit_3\MVVM\Model\" />
+    <Folder Include="Prosit_3\MVVM\View\" />
+    <Folder Include="Prosit_3\MVVM\ViewModel\" />
   </ItemGroup>
 
 </Project>
